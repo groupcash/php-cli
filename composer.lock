@@ -1,0 +1,631 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "723ba8552194f7ccd891e64afb8ab5e4",
+    "content-hash": "8fb968209b1dcf8b058766cc4a53cf03",
+    "packages": [
+        {
+            "name": "fgrosse/phpasn1",
+            "version": "1.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fgrosse/PHPASN1.git",
+                "reference": "ee6d1abd18f8bcbaf0b55563ba87e5ed16cd0c98"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fgrosse/PHPASN1/zipball/ee6d1abd18f8bcbaf0b55563ba87e5ed16cd0c98",
+                "reference": "ee6d1abd18f8bcbaf0b55563ba87e5ed16cd0c98",
+                "shasum": ""
+            },
+            "require": {
+                "ext-gmp": "*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FG\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Friedrich Große",
+                    "email": "friedrich.grosse@gmail.com",
+                    "homepage": "https://github.com/FGrosse",
+                    "role": "Author"
+                },
+                {
+                    "name": "All contributors",
+                    "homepage": "https://github.com/FGrosse/PHPASN1/contributors"
+                }
+            ],
+            "description": "A PHP Framework that allows you to encode and decode arbitrary ASN.1 structures using the ITU-T X.690 Encoding Rules.",
+            "homepage": "https://github.com/FGrosse/PHPASN1",
+            "time": "2015-07-15 21:26:40"
+        },
+        {
+            "name": "groupcash/php",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/groupcash/php.git",
+                "reference": "ae039e48b76b114fa0545791f3543f108a1876ad"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/groupcash/php/zipball/ae039e48b76b114fa0545791f3543f108a1876ad",
+                "reference": "ae039e48b76b114fa0545791f3543f108a1876ad",
+                "shasum": ""
+            },
+            "require": {
+                "mdanter/ecc": "^0.3.0",
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "rtens/scrut": "^1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "groupcash\\php\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nikolas Martens",
+                    "email": "Nikolas.M@rtens.org"
+                }
+            ],
+            "description": "PHP implementation of groupcash algorithms",
+            "time": "2016-03-03 14:47:03"
+        },
+        {
+            "name": "mdanter/ecc",
+            "version": "0.3.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpecc/phpecc.git",
+                "reference": "f10810c095084af4e2ce559fa8bb2cfd71fe04ed"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpecc/phpecc/zipball/f10810c095084af4e2ce559fa8bb2cfd71fe04ed",
+                "reference": "f10810c095084af4e2ce559fa8bb2cfd71fe04ed",
+                "shasum": ""
+            },
+            "require": {
+                "ext-gmp": "*",
+                "ext-mcrypt": "*",
+                "fgrosse/phpasn1": "~1.3.1",
+                "php": ">=5.4.0",
+                "symfony/console": "~2.6"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.1",
+                "squizlabs/php_codesniffer": "~2",
+                "symfony/yaml": "~2.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Mdanter\\Ecc\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matyas Danter",
+                    "homepage": "http://matejdanter.com/",
+                    "role": "Author"
+                },
+                {
+                    "name": "Thibaud Fabre",
+                    "email": "thibaud@aztech.io",
+                    "homepage": "http://aztech.io",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Drak",
+                    "email": "drak@zikula.org",
+                    "homepage": "http://zikula.org",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "PHP Elliptic Curve Cryptography library",
+            "homepage": "https://github.com/mdanter/phpecc",
+            "time": "2015-09-22 11:29:28"
+        },
+        {
+            "name": "nikic/php-parser",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nikic/PHP-Parser.git",
+                "reference": "c4bbc8e236a1f21b2b17cfbf3d46aa6ece69b9f7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/c4bbc8e236a1f21b2b17cfbf3d46aa6ece69b9f7",
+                "reference": "c4bbc8e236a1f21b2b17cfbf3d46aa6ece69b9f7",
+                "shasum": ""
+            },
+            "require": {
+                "ext-tokenizer": "*",
+                "php": ">=5.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "lib/bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Nikita Popov"
+                }
+            ],
+            "description": "A PHP parser written in PHP",
+            "keywords": [
+                "parser",
+                "php"
+            ],
+            "time": "2016-01-15 21:03:42"
+        },
+        {
+            "name": "rtens/domin",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rtens/domin.git",
+                "reference": "34d9dcdbc3f8e774740ef1ee51871a91e0777615"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rtens/domin/zipball/34d9dcdbc3f8e774740ef1ee51871a91e0777615",
+                "reference": "34d9dcdbc3f8e774740ef1ee51871a91e0777615",
+                "shasum": ""
+            },
+            "require": {
+                "watoki/factory": "1.*",
+                "watoki/reflect": "1.*"
+            },
+            "require-dev": {
+                "rtens/mockster": "3.*",
+                "rtens/scrut": "1.*"
+            },
+            "suggest": {
+                "erusev/parsedown": "To parse Action and Parameter descriptions for HTML output.",
+                "league/climate": "Used by some CLI components",
+                "mobiledetect/mobiledetectlib": "To enable mobile-specific client-side code only when on mobile.",
+                "silex/silex": "Supported delivery system",
+                "watoki/curir": "Supported delivery system."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "rtens\\domin\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nikolas Martens",
+                    "email": "Nikolas.M@rtens.org",
+                    "homepage": "http://rtens.org"
+                }
+            ],
+            "description": "General purpose DDD-friendly administration interface",
+            "homepage": "http://github.com/rtens/domin",
+            "keywords": [
+                "admin",
+                "administration",
+                "cms",
+                "ddd",
+                "domain model"
+            ],
+            "time": "2016-03-03 08:53:55"
+        },
+        {
+            "name": "symfony/console",
+            "version": "2.8.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/console.git",
+                "reference": "56cc5caf051189720b8de974e4746090aaa10d44"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/console/zipball/56cc5caf051189720b8de974e4746090aaa10d44",
+                "reference": "56cc5caf051189720b8de974e4746090aaa10d44",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9",
+                "symfony/polyfill-mbstring": "~1.0"
+            },
+            "require-dev": {
+                "psr/log": "~1.0",
+                "symfony/event-dispatcher": "~2.1|~3.0.0",
+                "symfony/process": "~2.1|~3.0.0"
+            },
+            "suggest": {
+                "psr/log": "For using the console logger",
+                "symfony/event-dispatcher": "",
+                "symfony/process": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.8-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Console\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Console Component",
+            "homepage": "https://symfony.com",
+            "time": "2016-02-28 16:20:50"
+        },
+        {
+            "name": "symfony/polyfill-mbstring",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-mbstring.git",
+                "reference": "1289d16209491b584839022f29257ad859b8532d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/1289d16209491b584839022f29257ad859b8532d",
+                "reference": "1289d16209491b584839022f29257ad859b8532d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "ext-mbstring": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Mbstring\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for the Mbstring extension",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "mbstring",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "time": "2016-01-20 09:13:37"
+        },
+        {
+            "name": "watoki/collections",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/watoki/collections.git",
+                "reference": "ff9c866020c7f2daff1b9bc24fe6d64e218af157"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/watoki/collections/zipball/ff9c866020c7f2daff1b9bc24fe6d64e218af157",
+                "reference": "ff9c866020c7f2daff1b9bc24fe6d64e218af157",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "watoki/smokey": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "spec\\watoki\\collections": "",
+                    "watoki\\collections": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nikolas Martens",
+                    "email": "Nikolas.M@rtens.org",
+                    "homepage": "http://rtens.org"
+                }
+            ],
+            "description": "Array wrapper for more structured collections for PHP",
+            "homepage": "http://github.com/watoki/collections",
+            "keywords": [
+                "collection",
+                "data structure",
+                "watoki"
+            ],
+            "time": "2015-08-07 08:22:49"
+        },
+        {
+            "name": "watoki/factory",
+            "version": "v1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/watoki/factory.git",
+                "reference": "689d178b1f475ae34e6f1b1bdaa3d17d07cee2f2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/watoki/factory/zipball/689d178b1f475ae34e6f1b1bdaa3d17d07cee2f2",
+                "reference": "689d178b1f475ae34e6f1b1bdaa3d17d07cee2f2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.8",
+                "watoki/reflect": "*"
+            },
+            "require-dev": {
+                "watoki/scrut": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "watoki\\factory": "src/",
+                    "spec\\watoki\\factory": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nikolas Martens",
+                    "email": "Nikolas.M@rtens.org",
+                    "homepage": "http://rtens.org"
+                }
+            ],
+            "description": "A simple dependency injection container for PHP",
+            "homepage": "http://github.com/watoki/factory",
+            "keywords": [
+                "dependency injection",
+                "watoki"
+            ],
+            "time": "2016-02-17 05:49:53"
+        },
+        {
+            "name": "watoki/reflect",
+            "version": "v1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/watoki/reflect.git",
+                "reference": "1d85de462f942d6d387811cd71ccc7623dc01f12"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/watoki/reflect/zipball/1d85de462f942d6d387811cd71ccc7623dc01f12",
+                "reference": "1d85de462f942d6d387811cd71ccc7623dc01f12",
+                "shasum": ""
+            },
+            "require": {
+                "nikic/php-parser": "1.*",
+                "php": ">=5.4",
+                "watoki/collections": "*"
+            },
+            "require-dev": {
+                "watoki/scrut": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "watoki\\reflect": "src/",
+                    "spec\\watoki\\reflect": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nikolas Martens",
+                    "email": "Nikolas.M@rtens.org",
+                    "homepage": "http://rtens.org"
+                }
+            ],
+            "description": "Enhanced reflection capabilities for PHP",
+            "homepage": "http://github.com/watoki/reflect",
+            "keywords": [
+                "reflection",
+                "type hints",
+                "watoki"
+            ],
+            "time": "2016-02-13 08:14:45"
+        },
+        {
+            "name": "watoki/smokey",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/watoki/smokey.git",
+                "reference": "dc577b0b043b70b596fe3e4fd2d32591408be417"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/watoki/smokey/zipball/dc577b0b043b70b596fe3e4fd2d32591408be417",
+                "reference": "dc577b0b043b70b596fe3e4fd2d32591408be417",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "spec\\watoki\\smokey": "",
+                    "watoki\\smokey": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nikolas Martens",
+                    "email": "Nikolas.M@rtens.org",
+                    "homepage": "http://rtens.org"
+                }
+            ],
+            "description": "Simple runtime event dispatcher for PHP",
+            "homepage": "http://github.com/watoki/smokey",
+            "keywords": [
+                "event",
+                "event dispatcher",
+                "watoki"
+            ],
+            "time": "2014-10-28 15:29:21"
+        }
+    ],
+    "packages-dev": [
+        {
+            "name": "rtens/scrut",
+            "version": "v1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rtens/scrut.git",
+                "reference": "aac4c34f19c93a59fd917175ec7e64b9298c0921"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rtens/scrut/zipball/aac4c34f19c93a59fd917175ec7e64b9298c0921",
+                "reference": "aac4c34f19c93a59fd917175ec7e64b9298c0921",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5",
+                "watoki/factory": "1.*"
+            },
+            "bin": [
+                "bin/scrut"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "rtens\\scrut": "src/",
+                    "spec\\rtens\\scrut": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nikolas Martens",
+                    "email": "Nikolas.M@rtens.org",
+                    "homepage": "http://rtens.org"
+                }
+            ],
+            "description": "Light-weight test runner for PHP",
+            "homepage": "http://github.com/rtens/scrut",
+            "keywords": [
+                "BDD",
+                "TDD",
+                "test",
+                "test runner"
+            ],
+            "time": "2016-02-17 06:03:43"
+        }
+    ],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "groupcash/php": 20,
+        "rtens/domin": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.5"
+    },
+    "platform-dev": []
+}

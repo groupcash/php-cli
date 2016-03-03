@@ -1,0 +1,31 @@
+{
+  "name": "groupcash/php-cli",
+  "description": "Command line interface for the groupcash/php library",
+  "type": "application",
+  "require": {
+    "php": ">=5.5",
+    "groupcash/php": "dev-master",
+    "rtens/domin": "dev-master"
+  },
+  "require-dev": {
+    "rtens/scrut": "^1.1"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Nikolas Martens",
+      "email": "Nikolas.M@rtens.org"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "groupcash\\php\\cli\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "spec\\groupcash\\php\\cli\\": "spec/"
+    }
+  },
+  "minimum-stability": "dev"
+}
