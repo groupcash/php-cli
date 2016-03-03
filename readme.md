@@ -1,4 +1,4 @@
-# groupcash PHP [![Build Status](https://travis-ci.org/groupcash/php-cli.png?branch=master)](https://travis-ci.org/groupcash/php-cli)
+# groupcash PHP CLI [![Build Status](https://travis-ci.org/groupcash/php-cli.png?branch=master)](https://travis-ci.org/groupcash/php-cli)
 
 Command line interface for the [*groupcash* PHP library][lib]
 
