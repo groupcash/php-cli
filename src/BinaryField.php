@@ -42,6 +42,16 @@ class BinaryField implements CliField {
      * @throws \Exception
      */
     public function inflate(Parameter $parameter, $serialized) {
+        if (substr($serialized, 0, 1) == '@') {
+            $serialized = trim(file_get_contents(substr($serialized, 1)));
+
+            if (strpos($serialized, 'KEY-')) {
+                $serialized = str_replace("\n", '', $serialized);
+                $serialized = preg_replace('/.*KEY-+([^\-]+)-+END.*/', '$1', $serialized);
+                $serialized = base64_decode($serialized);
+            }
+        }
+
         foreach ($this->transcoders as $transcoder) {
             if ($transcoder->hasEncoded($serialized)) {
                 return new Binary($transcoder->decode($serialized));

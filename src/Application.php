@@ -51,10 +51,12 @@ class Application {
     }
 
     private function setUpCliApplication(CliApplication $app, Console $console) {
-        $app->fields->add(new SerializingField($this->serializer));
+        $serializingField = new SerializingField($this->serializer);
+
+        $app->fields->add($serializingField);
+        $app->fields->add(new SerializingArrayField($serializingField, $app->fields));
         $app->fields->add(new FractionField());
         $app->renderers->add(new SerializingRenderer($this->serializer, $console));
-        $app->renderers->add(new ArrayRenderer($app->renderers));
 
         $transcoders = [
             'base64' => new Base64Transcoder(new NoneTranscoder()),
@@ -95,6 +97,10 @@ class Application {
      * @throws \Exception
      */
     public function decode($encoded) {
+        if (substr($encoded, 0, 1) == '@') {
+            $encoded = trim(file_get_contents(substr($encoded, 1)));
+        }
+
         return json_encode($this->serializer->decode($encoded), JSON_PRETTY_PRINT);
     }
 
@@ -103,6 +109,10 @@ class Application {
      * @return object
      */
     public function transcode($encoded) {
+        if (substr($encoded, 0, 1) == '@') {
+            $encoded = trim(file_get_contents(substr($encoded, 1)));
+        }
+
         return $this->serializer->inflate($encoded);
     }
 }

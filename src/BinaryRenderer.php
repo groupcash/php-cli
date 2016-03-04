@@ -3,6 +3,7 @@ namespace groupcash\php\cli;
 
 use groupcash\php\io\Transcoder;
 use groupcash\php\model\signing\Binary;
+use rtens\domin\delivery\cli\CliApplication;
 use rtens\domin\delivery\cli\Console;
 use rtens\domin\delivery\Renderer;
 
@@ -45,15 +46,11 @@ class BinaryRenderer implements Renderer {
     private function getTranscoderKey() {
         $keys = array_keys($this->transcoders);
 
-        if ($this->console->getArguments() == ['!']) {
+        if (in_array(CliApplication::INTERACTIVE_MODE, $this->console->getArguments())) {
             $this->console->writeLine('Available encodings: ' . implode(', ', $keys));
             return $this->console->read("Encoding [{$keys[0]}]: ") ?: $keys[0];
         }
 
-        try {
-            return $this->console->getOption('encoding');
-        } catch (\Exception $e) {
-            return $keys[0];
-        }
+        return $this->console->getOption('encoding', $keys[0]);
     }
 }

@@ -34,6 +34,10 @@ class SerializingField implements CliField {
      * @throws \Exception
      */
     public function inflate(Parameter $parameter, $serialized) {
+        if (substr($serialized, 0, 1) == '@') {
+            $serialized = trim(file_get_contents(substr($serialized, 1)));
+        }
+
         return $this->serializer->inflate($serialized);
     }
 

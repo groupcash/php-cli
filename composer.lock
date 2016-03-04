@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "723ba8552194f7ccd891e64afb8ab5e4",
+    "hash": "09f70ba6001ea64b4db2bf64de3ef620",
     "content-hash": "8fb968209b1dcf8b058766cc4a53cf03",
     "packages": [
         {
@@ -65,12 +65,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/groupcash/php.git",
-                "reference": "ae039e48b76b114fa0545791f3543f108a1876ad"
+                "reference": "09d63e9b6c9da713d4f295145712e2d6bc1f5c5a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/groupcash/php/zipball/ae039e48b76b114fa0545791f3543f108a1876ad",
-                "reference": "ae039e48b76b114fa0545791f3543f108a1876ad",
+                "url": "https://api.github.com/repos/groupcash/php/zipball/09d63e9b6c9da713d4f295145712e2d6bc1f5c5a",
+                "reference": "09d63e9b6c9da713d4f295145712e2d6bc1f5c5a",
                 "shasum": ""
             },
             "require": {
@@ -97,7 +97,7 @@
                 }
             ],
             "description": "PHP implementation of groupcash algorithms",
-            "time": "2016-03-03 14:47:03"
+            "time": "2016-03-04 08:59:06"
         },
         {
             "name": "mdanter/ecc",
@@ -209,12 +209,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/rtens/domin.git",
-                "reference": "34d9dcdbc3f8e774740ef1ee51871a91e0777615"
+                "reference": "1f7de47e1eb4bbd9c86511b18738e98f885e0360"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rtens/domin/zipball/34d9dcdbc3f8e774740ef1ee51871a91e0777615",
-                "reference": "34d9dcdbc3f8e774740ef1ee51871a91e0777615",
+                "url": "https://api.github.com/repos/rtens/domin/zipball/1f7de47e1eb4bbd9c86511b18738e98f885e0360",
+                "reference": "1f7de47e1eb4bbd9c86511b18738e98f885e0360",
                 "shasum": ""
             },
             "require": {
@@ -258,7 +258,7 @@
                 "ddd",
                 "domain model"
             ],
-            "time": "2016-03-03 08:53:55"
+            "time": "2016-03-04 08:55:01"
         },
         {
             "name": "symfony/console",
@@ -266,12 +266,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "56cc5caf051189720b8de974e4746090aaa10d44"
+                "reference": "79e3a4fd9006cd6d6b9ced7fd9d42c4c31d9b8f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/56cc5caf051189720b8de974e4746090aaa10d44",
-                "reference": "56cc5caf051189720b8de974e4746090aaa10d44",
+                "url": "https://api.github.com/repos/symfony/console/zipball/79e3a4fd9006cd6d6b9ced7fd9d42c4c31d9b8f6",
+                "reference": "79e3a4fd9006cd6d6b9ced7fd9d42c4c31d9b8f6",
                 "shasum": ""
             },
             "require": {
@@ -318,7 +318,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2016-02-28 16:20:50"
+            "time": "2016-03-04 07:54:35"
         },
         {
             "name": "symfony/polyfill-mbstring",
