@@ -20,4 +20,5 @@ Run the CLI application
 
     php groupcash.php
 
+[git]: http://git-scm.com
 [composer]: http://getcomposer.org
